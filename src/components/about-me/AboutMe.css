@@ -1,0 +1,61 @@
+.Stack {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Decoration {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.About-me {
+  max-width: 1024px;
+  margin: 0 20px;
+}
+
+.Container-about-me {
+  z-index: 100;
+}
+
+.About-me p {
+  line-height: 28px
+}
+
+
+.Title {
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #2196F3;
+  text-shadow: -2px 5px 5px rgba(0,0,0,0.20);
+}
+
+.About-me-text {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.About-me-text span {
+  font-weight: bold;
+  border-bottom: 3px solid #03A9F4;
+  padding-bottom: 3px;
+  font-style: italic;
+}
+
+@media (min-width: 840px) {
+  .Title {
+    font-size: 60px;
+    margin-top: 0;
+  }
+  .About-me-text {
+    font-size: 20px;
+  }
+}
