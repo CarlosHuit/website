@@ -3,6 +3,8 @@ import './App.css';
 import Circle from './components/Circle';
 import profile from './profile.jpg'
 import AboutMe from './components/about-me/AboutMe';
+import Projects from './components/projects/Projects';
+import Skills from './components/Skills/Skills'
 
 class App extends React.Component {
 
@@ -62,6 +64,8 @@ class App extends React.Component {
         <div className="Body">
 
           <AboutMe />
+          <Skills / >
+          <Projects />
 
         </div>
 

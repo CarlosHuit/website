@@ -1,0 +1,23 @@
+.Projects {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.Two-rows {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-rows: 150px auto;
+}
+
+.Projects .Title {
+  color: #2196F3;
+  font-weight: bold;
+  margin: auto;
+}
+
+/* .Container-Projects {
+
+} */

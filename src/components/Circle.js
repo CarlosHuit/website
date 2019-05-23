@@ -11,12 +11,11 @@ class Circle extends React.Component {
       width: `${this.props.position.size}px`,
       height: `${this.props.position.size}px`,
       borderWidth: `${this.props.position.size * 0.30}px`,
-      borderColor: this.props.position.color !== undefined ? this.props.position.color : '#0097A7'
+      borderColor: this.props.position.color !== undefined ? this.props.position.color : '#00bcd4'
     }
   }
 
   render() {
-    console.log(this.props);
     return <div className='Circle' style={this.generateStyles(this.props)} ></div>
   }
   

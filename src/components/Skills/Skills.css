@@ -1,0 +1,44 @@
+.Skills {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(/static/media/background.3a5cb802.jpg);
+}
+
+.Container-Skills {
+  width: 100%;
+  max-width: 1024px;
+  z-index: 100;
+}
+
+.Container-Skills .Title {
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.Container-Skills .Skill-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.Container-Skills .Skill-group div{
+  background: #ffffff;
+  padding: 10px 18px;
+  margin: 5px 5px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+
+
+@media (min-width: 840px) {
+  .Container-Skills .Skill-group div{
+    padding: 15px 23px;
+    margin: 5px 5px;
+    border-radius: 3px;
+    font-size: 22px;
+    box-shadow: 0 0 4px 3px rgba(0,0,0,0.5)
+  }
+}
