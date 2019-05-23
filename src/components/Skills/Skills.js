@@ -1,6 +1,6 @@
-import React from 'react'
-import './Skills.css'
+import React from 'react';
 import Circle from '../Circle/Circle';
+import './Skills.css';
 
 class Skills extends React.Component {
 
@@ -53,6 +53,8 @@ class Skills extends React.Component {
     'GraphQL',
   ]
 
+  skillList = this.skills.map((e, i) => <div key={i}> {e} </div>)
+
   render() {
     return (
       <div className="Skills" id='skills'>
@@ -75,11 +77,7 @@ class Skills extends React.Component {
             </div>
 
             <div className="Skill-group">
-              {
-                this.skills.map((skill, i) => {
-                return <div key={i} > { skill } </div>
-              })
-              }
+              { this.skillList }
             </div>
 
           </div>

@@ -32,7 +32,7 @@ class Toolbar extends React.Component {
 
 
   optionsMenu = [
-    { txt: 'Home',      id: 'appHeader' },
+    { txt: 'Home',      id: 'header' },
     { txt: 'Sobre mi',  id: 'aboutMe' },
     { txt: 'Skills',    id: 'skills' },
     { txt: 'Proyectos', id: 'projects' },
