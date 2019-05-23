@@ -3,6 +3,13 @@ import './Toolbar.css'
 
 class Toolbar extends React.Component {
 
+  optionsMenu = [
+    { txt: 'Home',      id: 'header' },
+    { txt: 'Sobre mi',  id: 'aboutMe' },
+    { txt: 'Skills',    id: 'skills' },
+    { txt: 'Proyectos', id: 'projects' },
+  ]
+
   constructor(props) {
 
     super(props);
@@ -31,70 +38,74 @@ class Toolbar extends React.Component {
   }
 
 
-  optionsMenu = [
-    { txt: 'Home',      id: 'header' },
-    { txt: 'Sobre mi',  id: 'aboutMe' },
-    { txt: 'Skills',    id: 'skills' },
-    { txt: 'Proyectos', id: 'projects' },
-  ]
+  iconMenu() {
+
+    return (
+      <div className="Icon-menu">
+        <div className="Line"></div>
+        <div className="Line"></div>
+        <div className="Line"></div>
+      </div>
+    )
+
+  }
 
 
-  iconMenu = <div className="Icon-menu">
-    <div className="Line"></div>
-    <div className="Line"></div>
-    <div className="Line"></div>
-  </div>
+  desktopMenu() {
 
+    const list = []
 
-  optionsMenuList = <div className="Options">
-    {
-      // eslint-disable-next-line array-callback-return
-      this.optionsMenu.map((e, i) => {
+    for (let i = 1; i < this.optionsMenu.length; i++) {
 
-        if (i > 0) {
-          return (
-            <div
-              onClick={(ev) => this.scrollTo(i)} key={i} className="Option-menu"
-              >
-              { e.txt }
-            </div>
-          )
-        }
+      const opt = (
+        <div onClick={(ev) => this.scrollTo(i)} key={i} className="Option-menu">
+          { this.optionsMenu[i].txt }
+        </div>
+      )
 
-      })
+      list.push( opt )
+
     }
-  </div>
+
+    return <div className="Options">{ list }</div>
+
+  }
 
 
-  mobileMenu = <div className="MobileMenu">
+  mobileMenu() {
 
-    <div className="Options-menu-list-mobile">
-      {
-        // eslint-disable-next-line array-callback-return
-        this.optionsMenu.map((e, i) => {
+    const list = []
 
-          if (i > 0) {
-            return <div onClick={(ev) => this.scrollTo(i)} className="Option-menu-mobile" key={i}>
-              {e.txt}
-            </div>
-          }
+    for (let i = 1; i < this.optionsMenu.length; i++) {
 
-        })
-      }
+      const opt = (
+        <div key={i} className="Option-menu-mobile" onClick={(ev) => this.scrollTo(i)}>
+          {this.optionsMenu[i].txt}
+        </div>
+      )
+
+      list.push( opt )
+
+    }
+
+    return <div className="MobileMenu">
+
+      <div className="Options-menu-list-mobile">
+        { list }
+      </div>
+
+      <div className="Icon-close" onClick={this.closeMobileMenu.bind(this)}>
+        <div></div>
+      </div>
+
     </div>
 
-    <div className="Icon-close" onClick={this.closeMobileMenu.bind(this)}>
-      <div></div>
-    </div>
-
-  </div>
+  }
 
 
-  scrollTo(i ) {
+  scrollTo(i) {
 
-    this.setState({
-      showMobileMenu: false
-    })
+    this.setState({ showMobileMenu: false })
 
     let top = 0;
 
@@ -135,25 +146,20 @@ class Toolbar extends React.Component {
       <div>
 
 
-
         <div className="Toolbar">
 
           <div className="Container-icon"  onClick={this.openMenuMobile} >
-            { this.state.isMobile && this.iconMenu }
+            { this.state.isMobile && this.iconMenu() }
           </div>
 
           <div className="Container-options">
-            { !this.state.isMobile && this.optionsMenuList }
+            { !this.state.isMobile && this.desktopMenu() }
           </div>
 
         </div>
 
 
-        {
-          this.state.showMobileMenu && this.mobileMenu
-        }
-
-
+        { this.state.showMobileMenu && this.mobileMenu() }
 
 
       </div>

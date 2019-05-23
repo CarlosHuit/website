@@ -5,7 +5,7 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 15px;
-  padding: 5px 10px;
+  padding: 15px 10px;
   max-width: 480px;
   box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
 
@@ -38,7 +38,7 @@
   text-rendering: optimizeLegibility;
   margin-bottom: 1px;
   border-bottom: 2px solid #FF9800;
-  text-transform: uppercase;
+  padding-top: 5px;
 }
 
 .Project-tags{
@@ -57,6 +57,7 @@
   letter-spacing: 0.5px;
   font-size: 14px;
   text-rendering: optimizeLegibility;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
 }
 
 .Project-links {

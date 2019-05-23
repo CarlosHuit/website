@@ -41,7 +41,7 @@ class Card extends React.Component {
         </div>
 
         <div className="Project-links">
-          <a href={this.url}>Ver Codigo</a>
+          <a href={this.data.url}>Ver Codigo</a>
 
 
         </div>

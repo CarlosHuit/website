@@ -1,12 +1,12 @@
-import React from 'react'
-import './Header.css'
+import React from 'react';
 import Circle from '../Circle/Circle';
-import profile from '../../profile.jpg'
-import Toolbar from '../Toolbar/Toolbar'
+import Toolbar from '../Toolbar/Toolbar';
+import './Header.css';
+import Great from '../Great/Great';
+
 
 class Header extends React.Component {
 
-  s = ['Hi, i am', 'Carlos Huit']
 
   constructor(props) {
 
@@ -22,45 +22,35 @@ class Header extends React.Component {
 
   }
 
+
+  componentDidMount() {
+
+    window.addEventListener('scroll', this.q)
+
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.q)
+  }
+
+  q = (ev) => console.log(ev.path[1].pageYOffset);
+
   render() {
+
 
     return (
       <div className="Header" id="header" >
 
 
-      <div className="App-decorators">
-        { this.state.positions.map((e, i) => <Circle key={i} position={e} /> ) }
-      </div>
-
-
-      <div className="App-greeter">
-
-
-        <div className="Greeter">
-
-          {
-            this.s.map((el, i) => <h1 key={i}>{el}</h1> )
-          }
-
-          <section className="Presentation">
-            <p> Full Stack Developer </p>
-          </section>
-
+        <div className="App-decorators">
+          { this.state.positions.map((e, i) => <Circle key={i} position={e} /> ) }
         </div>
 
+        <Great />
 
-
-        <div className="Profile-image">
-          <img src={profile} alt=""/>
-        </div>
-
-
+        <Toolbar />
 
       </div>
-
-      <Toolbar />
-
-    </div>
 
 
     )
