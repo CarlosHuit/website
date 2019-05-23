@@ -16,15 +16,12 @@ class Projects extends React.Component {
 
   render() {
 
-    const scrollOptions = {
-      behavior: 'smooth',
-      top: 736.0,
-    }
+
 
     // window.scrollTo(scrollOptions);
 
     return (
-      <div className="Projects" id="proyectos" >
+      <div className="Projects" id="projects" >
         <div className="Stack">
 
           <div className="Decoration">

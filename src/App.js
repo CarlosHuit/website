@@ -5,6 +5,7 @@ import profile from './profile.jpg'
 import AboutMe from './components/about-me/AboutMe';
 import Projects from './components/projects/Projects';
 import Skills from './components/Skills/Skills'
+import Toolbar from './components/Toolbar/Toolbar';
 
 class App extends React.Component {
 
@@ -29,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
 
-        <div className="App-header">
+        <div className="App-header" id="appHeader" >
 
 
           <div className="App-decorators">
@@ -62,6 +63,8 @@ class App extends React.Component {
 
           </div>
 
+          
+          <Toolbar />
 
         </div>
 
