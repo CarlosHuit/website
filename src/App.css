@@ -51,8 +51,7 @@
 
 .Profile-image {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  bottom: 2%
 }
 
 .Profile-image img {
@@ -81,7 +80,11 @@
   
 }
 
-
+@media (max-height: 480px) {
+  .Profile-image {
+    display: none;
+  }
+}
 
 
 
