@@ -1,0 +1,15 @@
+.Footer {
+  background-image: url(/static/media/background.3a5cb802.jpg);
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.Footer div {
+  margin: 5px 0;
+  font-size: 18px;
+}

@@ -6,6 +6,7 @@ import AboutMe from './components/about-me/AboutMe';
 import Projects from './components/projects/Projects';
 import Skills from './components/Skills/Skills'
 import Toolbar from './components/Toolbar/Toolbar';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
 
@@ -75,6 +76,8 @@ class App extends React.Component {
           <Projects />
 
         </div>
+
+        <Footer />
 
       </div>
     )
