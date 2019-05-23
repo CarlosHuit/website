@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css'
+import Triangle from '../decoration/trinangle/Triangle';
 
 class Projects extends React.Component {
 
@@ -15,14 +16,26 @@ class Projects extends React.Component {
 
   render() {
 
+    const scrollOptions = {
+      behavior: 'smooth',
+      top: 736.0,
+    }
+
+    // window.scrollTo(scrollOptions);
+
     return (
       <div className="Projects" id="proyectos" >
         <div className="Stack">
 
+          <div className="Decoration">
+            <Triangle direction="top"/>
+            <Triangle direction="bottom"/>
+          </div>
+
           <div className="Two-rows">
 
             <p className="Title">
-              Projects
+              Portafolio
             </p>
 
             <div className="Container-Projects">
