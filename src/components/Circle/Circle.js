@@ -16,7 +16,13 @@ class Circle extends React.Component {
   }
 
   render() {
-    return <div className='Circle' style={this.generateStyles(this.props)} ></div>
+    return (
+      <div
+        className='Circle'
+        style={this.generateStyles(this.props)}
+        >
+      </div>
+    )
   }
   
 }

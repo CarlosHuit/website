@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css'
-import Circle from '../Circle';
+import Circle from '../Circle/Circle';
 
 class Skills extends React.Component {
 

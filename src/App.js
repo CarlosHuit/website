@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Circle from './components/Circle';
+import Circle from './components/Circle/Circle';
 import profile from './profile.jpg'
 import AboutMe from './components/about-me/AboutMe';
-import Projects from './components/projects/Projects';
+import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills'
 import Toolbar from './components/Toolbar/Toolbar';
 import Footer from './components/Footer/Footer';

@@ -1,11 +1,14 @@
 import React from 'react';
 import './Projects.css'
 import Triangle from '../decoration/trinangle/Triangle';
+import Card from '../Card/Card';
 
 class Projects extends React.Component {
 
   constructor(props) {
+
     super(props)
+
     this.state = {
       projects: [
         {
@@ -46,6 +49,7 @@ class Projects extends React.Component {
         },
       ]
     }
+
   }
 
   render() {
@@ -55,68 +59,22 @@ class Projects extends React.Component {
       <div className="Projects" id="projects" >
         <div className="Stack">
 
+
           <div className="Decoration">
+
             <Triangle direction="top"/>
             <Triangle direction="bottom"/>
+
           </div>
+
 
           <div className="Two-rows">
 
-            <p className="Title">
-              Proyectos
-            </p>
+            <p className="Title"> Proyectos </p>
 
             <div className="Container-Projects">
 
-              {
-                this.state.projects.map((e, i) => {
-
-                  return (
-                    <div className="Card">
-
-                      <div className="Project-title">
-                        { e.name }
-                      </div>
-                      <div className="Project-desc">
-                        { e.desc }
-                      </div>
-                      <div className="Project-type">
-                        {
-                          e.type.map((e, i) => {
-                            return (
-                              <span className="Type" key={i}>{e}</span>
-                            )
-                          })
-                        }
-                      </div>
-                      <div className="Project-tags">
-                        {
-                          e.tags.map((t, i) => {
-                            return <span className="Tag" key={i} >{t}</span>
-                          })
-                        }
-                      </div>
-
-                      <div className="Project-links">
-                        <a href={e.url}>Ver Codigo</a>
-
-
-                      </div>
-
-                      {
-                        e.app && <div className="Project-app-link">
-                          <a href={e.app}>Ir a la aplicacion</a>
-                        </div>
-                      }
-
-
-
-                    </div>
-                  )
-
-                })
-              }
-
+              { this.state.projects.map( (e, i) => <Card data={e} key={i}/> ) }
 
             </div>
 
