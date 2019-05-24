@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/CarlosHuit/website/static/css/main.8c58ab68.chunk.css",
-    "main.js": "/CarlosHuit/website/static/js/main.cbf30f46.chunk.js",
-    "main.js.map": "/CarlosHuit/website/static/js/main.cbf30f46.chunk.js.map",
-    "runtime~main.js": "/CarlosHuit/website/static/js/runtime~main.bcf946d0.js",
-    "runtime~main.js.map": "/CarlosHuit/website/static/js/runtime~main.bcf946d0.js.map",
-    "static/js/2.9a3f3bc0.chunk.js": "/CarlosHuit/website/static/js/2.9a3f3bc0.chunk.js",
-    "static/js/2.9a3f3bc0.chunk.js.map": "/CarlosHuit/website/static/js/2.9a3f3bc0.chunk.js.map",
-    "index.html": "/CarlosHuit/website/index.html",
-    "precache-manifest.a5e085bc466029f003b9d82f5772aa3a.js": "/CarlosHuit/website/precache-manifest.a5e085bc466029f003b9d82f5772aa3a.js",
-    "service-worker.js": "/CarlosHuit/website/service-worker.js",
-    "static/css/main.8c58ab68.chunk.css.map": "/CarlosHuit/website/static/css/main.8c58ab68.chunk.css.map",
-    "static/media/Header.css": "/CarlosHuit/website/static/media/background.3a5cb802.jpg",
-    "static/media/profile.jpg": "/CarlosHuit/website/static/media/profile.140bacec.jpg"
+    "main.css": "/website/static/css/main.9c4e72a7.chunk.css",
+    "main.js": "/website/static/js/main.bb2ab425.chunk.js",
+    "main.js.map": "/website/static/js/main.bb2ab425.chunk.js.map",
+    "runtime~main.js": "/website/static/js/runtime~main.de462641.js",
+    "runtime~main.js.map": "/website/static/js/runtime~main.de462641.js.map",
+    "static/js/2.9a3f3bc0.chunk.js": "/website/static/js/2.9a3f3bc0.chunk.js",
+    "static/js/2.9a3f3bc0.chunk.js.map": "/website/static/js/2.9a3f3bc0.chunk.js.map",
+    "index.html": "/website/index.html",
+    "precache-manifest.cab92cb5dac9cf268a25449d55164602.js": "/website/precache-manifest.cab92cb5dac9cf268a25449d55164602.js",
+    "service-worker.js": "/website/service-worker.js",
+    "static/css/main.9c4e72a7.chunk.css.map": "/website/static/css/main.9c4e72a7.chunk.css.map",
+    "static/media/Header.css": "/website/static/media/background.3a5cb802.jpg",
+    "static/media/profile.jpg": "/website/static/media/profile.140bacec.jpg"
   }
 }

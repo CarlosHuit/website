@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background-image: url(/static/media/background.3a5cb802.jpg);
+  background-image: url(../../background.jpg);
 }
 
 .Container-Skills {
