@@ -9,7 +9,7 @@
     "react-particles-js": "^2.6.0",
     "react-scripts": "3.0.1"
   },
-  "homepage": "https://github.com/CarlosHuit/website",
+  "homepage": "https://carloshuit.github.io/website/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
