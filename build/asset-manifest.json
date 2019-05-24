@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/CarlosHuit/website/static/css/main.8c58ab68.chunk.css",
+    "main.js": "/CarlosHuit/website/static/js/main.cbf30f46.chunk.js",
+    "main.js.map": "/CarlosHuit/website/static/js/main.cbf30f46.chunk.js.map",
+    "runtime~main.js": "/CarlosHuit/website/static/js/runtime~main.bcf946d0.js",
+    "runtime~main.js.map": "/CarlosHuit/website/static/js/runtime~main.bcf946d0.js.map",
+    "static/js/2.9a3f3bc0.chunk.js": "/CarlosHuit/website/static/js/2.9a3f3bc0.chunk.js",
+    "static/js/2.9a3f3bc0.chunk.js.map": "/CarlosHuit/website/static/js/2.9a3f3bc0.chunk.js.map",
+    "index.html": "/CarlosHuit/website/index.html",
+    "precache-manifest.74b20eab9008afbc8b3fb6224f531fbb.js": "/CarlosHuit/website/precache-manifest.74b20eab9008afbc8b3fb6224f531fbb.js",
+    "service-worker.js": "/CarlosHuit/website/service-worker.js",
+    "static/css/main.8c58ab68.chunk.css.map": "/CarlosHuit/website/static/css/main.8c58ab68.chunk.css.map",
+    "static/media/Header.css": "/CarlosHuit/website/static/media/background.3a5cb802.jpg",
+    "static/media/profile.jpg": "/CarlosHuit/website/static/media/profile.140bacec.jpg"
+  }
+}
