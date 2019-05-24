@@ -3,6 +3,7 @@ import Circle from '../Circle/Circle';
 import Toolbar from '../Toolbar/Toolbar';
 import './Header.css';
 import Great from '../Great/Great';
+import Particles from 'react-particles-js';
 
 
 class Header extends React.Component {
@@ -12,6 +13,7 @@ class Header extends React.Component {
 
     super(props);
     this.state = {
+      ammount: 50,
       positions: [
         { x: '80%', y: '80%', size: 60, },
         { x: '10%', y: '15%', size: 72, },
@@ -25,22 +27,62 @@ class Header extends React.Component {
 
   componentDidMount() {
 
-    window.addEventListener('scroll', this.q)
+    this.setState({
+      ammount: parseInt(window.innerWidth * 0.07)
+    })
 
+    window.addEventListener('resize', this.calcAmout)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.q)
+    window.removeEventListener('resize', this.calcAmout)
   }
 
-  q = (ev) => console.log(ev.path[1].pageYOffset);
+  calcAmout = (ev) => {
+    this.setState({
+      ammount: parseInt(window.innerWidth * 0.07)
+    });
+  }
 
   render() {
-
 
     return (
       <div className="Header" id="header" >
 
+        <div className="Particles-container">
+          < Particles
+            width={window.innerWidth}
+            height={window.innerHeight}
+            params={{
+              "particles": {
+                "number": {
+                  "value": this.state.ammount
+                },
+                "size": {
+                  "value": 3
+                },
+              },
+              "interactivity": {
+                "events": {
+                  "onhover": {
+                    "enable": false,
+                    "mode": "repulse"
+                  },
+                  "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                  }
+                },
+                "modes": {
+                  "repulse": {
+                    "distance": 280,
+                    "duration": 0.4
+                  },
+                }
+              },
+            }} 
+          />
+        </div>
 
         <div className="App-decorators">
           { this.state.positions.map((e, i) => <Circle key={i} position={e} /> ) }
