@@ -24,28 +24,29 @@ class Projects extends React.Component {
           desc: 'Aplicacion movil multi plataforma que intenta optimizar elproceso de aprendizaje en los campos de lectura haciendo uso de reconocomiento de voz y lectura utilizando el reconociento de patrones y tts.',
           type: ['Android', 'iOS', 'Multi Plataforma'],
           tags: ['Fluter', 'Dart', 'Java', 'Material Design', 'Cupertino iOS', 'Swift'],
-          url: 'https://github.com/CarlosHuit/flutter-app'
+          url: 'https://github.com/CarlosHuit/flutter_app'
         },
         {
           name: 'Weduc API',
           desc: 'Api Rest que sirve y admnistra la informacion de la aplicacion Weduc, para las versiones Desktop, Mobile y Web.',
           type: ['SERVER', 'API REST', 'MVC'],
           tags: ['ExpressJS', 'NestJS', 'JavaScript', 'TypeScript', 'MongoDB', 'MySQL', 'FastifyJS'],
-          url: 'https://github.com/CarlosHuit'
+          url: 'https://github.com/CarlosHuit/api-weduc'
         },
         {
           name: 'Personal Web Site',
           desc: 'Sitio web personal.',
           type: ['PWA', 'Web', 'SPA'],
           tags: ['ReactJS', 'CSS', 'HTML', 'TypeScript', 'JavaScript'],
-          url: 'https://github.com/CarlosHuit'
+          url: 'https://github.com/CarlosHuit/website'
         },
         {
           name: 'Sales Point',
           desc: 'Aplicacion web para gestionar existencias de inventario, ventas, devoluciones y compras de un punto de ventas o almacen.',
           type: ['PWA', 'Web', 'SPA', 'Desktop'],
           tags: ['Angular', 'HTML', 'CSS', 'JSON', 'Angular Material', 'Stylus', 'JavaScript', 'TypeScript', 'API Rest', 'MongoDB', 'ElectronJS'],
-          url: 'https://github.com/CarlosHuit'
+          url: 'https://github.com/CarlosHuit/sales-point',
+          app: 'https://store-gestion.herokuapp.com'
         },
       ]
     }
