@@ -18,11 +18,43 @@
   color: white
 }
 
+.Presentation {
+  height: 40px;
+  overflow: hidden;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 50% 50%;
+}
+
+.Presentation-list{
+  animation: showAll 15s infinite alternate;
+}
+
+@keyframes showAll {
+  0.00% { transform: translateY(0px) }
+  14.25% { transform: translateY(0px) }
+  28.56% { transform: translateY(-40px) }
+  42.83% { transform: translateY(-80px) }
+  57.12% { transform: translateY(-120px) }
+  71.39% { transform: translateY(-160px) }
+  86.67% { transform: translateY(-200px) }
+  100% { transform: translateY(-200px) }
+}
+
 .Presentation p{
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   color: white;
   margin: 0;
   font-size: 24px;
   font-weight: bold;
+  
+}
+
+.Dev-text p{
+  justify-content: flex-start !important
 }
 
 .Profile-image {

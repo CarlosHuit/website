@@ -2,7 +2,7 @@ import React from 'react';
 import Circle from '../Circle/Circle';
 import Toolbar from '../Toolbar/Toolbar';
 import './Header.css';
-import Great from '../Great/Great';
+import Greet from '../Greet/Greet';
 import Particles from 'react-particles-js';
 
 
@@ -88,7 +88,7 @@ class Header extends React.Component {
           { this.state.positions.map((e, i) => <Circle key={i} position={e} /> ) }
         </div>
 
-        <Great />
+        <Greet />
 
         <Toolbar />
 
